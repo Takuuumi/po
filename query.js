@@ -1,6 +1,6 @@
-// $(function(){
-//     $('.f-p').hide().fadeIn(3000); 
-//   });///ロード中ブラウザ
+$(function(){
+    $('.f-p').hide().fadeIn(3000); 
+  });///ロード中ブラウザ
 
   $(window).on('load', function() {
     $('.loa').hide();
