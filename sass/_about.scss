@@ -1,0 +1,59 @@
+.about {
+        background-image: url(../img/ai.jpg);
+        width: 100%;
+        height: 120vh;
+        background-size: cover;
+        &::before {
+            display: block;
+            content: "";
+            // background-color: rgba(0,0,0,0.2);
+            background-color: rgb(214, 208, 208);
+            width: 100%;
+            height: 60px;
+        }
+    }
+.a-con {
+    background-color: rgba(0,0,0,0.4);
+    height: 110vh;
+    width: 100%;
+    position: relative;
+
+    }
+.a-img {
+    width: 100%;
+    background-size: cover;
+}
+
+.a-p {
+    background-color: rgba(255, 253, 253, 0.5);
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    padding: 40px;
+    transform: translate(-85%, -10%);
+    
+}
+
+// .a-inner {
+//     margin: 0 auto;
+//     width: 80%;
+//     display: flex;
+//     justify-content: center;
+//     position: relative;
+// }
+// .a-name {
+//     font-size: 90px;
+//     color: white;
+// }
+// .a-p {
+//     // background-color: rgba(255, 253, 253, 0.3);
+//     font-size: 20px;
+//     position: absolute;
+//     top: 50%;
+//     right: 50%;
+//     color: white;
+//     padding: 40px;
+//     transform: translate(0, 50%);
+// }
