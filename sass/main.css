@@ -326,8 +326,8 @@ li:nth-of-type(4) {
   color: white;
   -webkit-animation-name: tada;
           animation-name: tada;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
 }
 
 .f-p::after {
