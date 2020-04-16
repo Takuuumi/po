@@ -248,8 +248,8 @@ header {
           animation-name: lefttocenter;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
-  -webkit-transition: color 1s;
-  transition: color 1s;
+  -webkit-transition: color 2s;
+  transition: color 2s;
 }
 
 .logo:hover {
@@ -281,8 +281,8 @@ li {
   margin-left: 30px;
   font-size: 30px;
   border-bottom: 1px solid transparent;
-  -webkit-transition: border-bottom 1s;
-  transition: border-bottom 1s;
+  -webkit-transition: border-bottom 2s;
+  transition: border-bottom 2s;
 }
 
 li:hover {
@@ -295,8 +295,8 @@ li:nth-of-type(4) {
 
 .header-a {
   color: white;
-  -webkit-transition: color 0.7s;
-  transition: color 0.7s;
+  -webkit-transition: color 1.5s;
+  transition: color 1.5s;
 }
 
 .header-a:hover {
@@ -319,6 +319,7 @@ li:nth-of-type(4) {
 }
 
 .f-p {
+  font-family: Georgia, serif;
   position: absolute;
   top: 50%;
   right: 40%;
@@ -567,6 +568,7 @@ footer {
   height: 8rem;
   background-color: black;
   position: relative;
+  font-family: Georgia, serif;
 }
 
 .f-container {
@@ -602,8 +604,8 @@ footer {
   margin: 0;
   border-right: white 1px solid;
   padding: 10px;
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .f-l:nth-of-type(4) {
@@ -613,16 +615,14 @@ footer {
 
 .f-l:hover {
   cursor: pointer;
-  color: #daf562;
-  background-color: rgba(151, 149, 149, 0.3);
 }
 
 .footer-a {
   color: white;
   font-size: 20px;
   height: 100%;
-  -webkit-transition: color 0.7s;
-  transition: color 0.7s;
+  -webkit-transition: color 1.5s;
+  transition: color 1.5s;
 }
 
 .footer-a:hover {

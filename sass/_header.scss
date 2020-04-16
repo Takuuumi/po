@@ -14,7 +14,7 @@ header {
     padding: 0 0 0 30px;
     animation-name: lefttocenter;
     animation-duration: 3s;
-    transition: color 1s;
+    transition: color 2s;
     &:hover {
         color: black;
     }
@@ -37,7 +37,7 @@ li {
     margin-left: 30px;
     font-size: 30px;
     border-bottom: 1px solid transparent;
-    transition: border-bottom 1s;
+    transition: border-bottom 2s;
     &:hover {
         border-bottom: 1px black solid;
     }
@@ -48,7 +48,7 @@ li {
 
 .header-a {
     color: white;
-    transition: color 0.7s;
+    transition: color 1.5s;
     &:hover {
         color: black;
         cursor: pointer;

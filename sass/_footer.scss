@@ -3,6 +3,7 @@ footer {
     height: 8rem;
     background-color: black;
     position: relative;
+    font-family: Georgia, serif;
 }
 .f-container {
     width: 100%;
@@ -30,22 +31,21 @@ footer {
     margin: 0;
     border-right: white 1px solid;
     padding: 10px;
-    transition: 0.7s;
+    transition: 1s;
     &:nth-of-type(4) {
     border-right: black 1px solid;
     padding: 10px;
     }
     &:hover {
         cursor: pointer;
-        color:  rgb(218, 245, 98);
-        background-color: rgba(151, 149, 149, 0.3);
+        
     } 
 }
 .footer-a {
     color: white;
     font-size: 20px;
     height: 100%;
-    transition: color 0.7s;
+    transition: color 1.5s;
     &:hover {
         cursor: pointer;
         color: rgb(255, 255, 72);
