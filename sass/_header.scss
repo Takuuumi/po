@@ -10,10 +10,14 @@ header {
     font-family: Georgia, serif;
 }
 .logo {
-    font-size: 45px;
+    font-size: 50px;
     padding: 0 0 0 30px;
     animation-name: lefttocenter;
     animation-duration: 3s;
+    transition: color 1s;
+    &:hover {
+        color: black;
+    }
     // animation-name: toDown;
     // animation-duration: 3s;
     
@@ -31,19 +35,27 @@ nav ul {
 }
 li {
     margin-left: 30px;
-    font-size: 25px;
+    font-size: 30px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 1s;
+    &:hover {
+        border-bottom: 1px black solid;
+    }
     &:nth-of-type(4) {
         margin-right: 20px;
     }
 }
-li a {
+
+.header-a {
     color: white;
+    transition: color 0.7s;
     &:hover {
-        color: rgb(208, 233, 99);
-
+        color: black;
+        cursor: pointer;
+        width: 100%; 
     }
-
 }
+
 
 
 

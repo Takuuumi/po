@@ -102,6 +102,69 @@ a {
   }
 }
 
+@-webkit-keyframes tada {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  10%,
+  20% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+  }
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+  40%,
+  60%,
+  80% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes tada {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  10%,
+  20% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+  }
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+  40%,
+  60%,
+  80% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.tada {
+  -webkit-animation-name: tada;
+  animation-name: tada;
+}
+
 *, *::after, *::before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -179,12 +242,18 @@ header {
 }
 
 .logo {
-  font-size: 45px;
+  font-size: 50px;
   padding: 0 0 0 30px;
   -webkit-animation-name: lefttocenter;
           animation-name: lefttocenter;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
+  -webkit-transition: color 1s;
+  transition: color 1s;
+}
+
+.logo:hover {
+  color: black;
 }
 
 nav ul {
@@ -210,19 +279,30 @@ nav ul:hover {
 
 li {
   margin-left: 30px;
-  font-size: 25px;
+  font-size: 30px;
+  border-bottom: 1px solid transparent;
+  -webkit-transition: border-bottom 1s;
+  transition: border-bottom 1s;
+}
+
+li:hover {
+  border-bottom: 1px black solid;
 }
 
 li:nth-of-type(4) {
   margin-right: 20px;
 }
 
-li a {
+.header-a {
   color: white;
+  -webkit-transition: color 0.7s;
+  transition: color 0.7s;
 }
 
-li a:hover {
-  color: #d0e963;
+.header-a:hover {
+  color: black;
+  cursor: pointer;
+  width: 100%;
 }
 
 .first {
@@ -241,11 +321,13 @@ li a:hover {
 .f-p {
   position: absolute;
   top: 50%;
-  right: 50%;
-  -webkit-transform: translate(50%, -50%);
-          transform: translate(50%, -50%);
+  right: 40%;
   font-size: 90px;
   color: white;
+  -webkit-animation-name: tada;
+          animation-name: tada;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 
 .f-p::after {
@@ -286,17 +368,9 @@ li a:hover {
   background-size: cover;
 }
 
-.letter::before {
-  display: block;
-  content: "";
-  background-color: #dad2d2;
-  width: 100%;
-  height: 60px;
-}
-
 .l-inner {
   background-color: rgba(0, 0, 0, 0.4);
-  height: 110vh;
+  height: 100%;
   width: 100%;
   margin: 0 auto;
   display: -webkit-box;
@@ -327,17 +401,9 @@ li a:hover {
   background-size: cover;
 }
 
-.about::before {
-  display: block;
-  content: "";
-  background-color: #d6d0d0;
-  width: 100%;
-  height: 60px;
-}
-
 .a-con {
   background-color: rgba(0, 0, 0, 0.4);
-  height: 110vh;
+  height: 100%;
   width: 100%;
   position: relative;
 }
@@ -367,17 +433,9 @@ li a:hover {
   position: relative;
 }
 
-.service::before {
-  display: block;
-  content: "";
-  background-color: #d6d0d0;
-  width: 100%;
-  height: 60px;
-}
-
 .s-con {
   background-color: rgba(0, 0, 0, 0.4);
-  height: 110vh;
+  height: 100%;
   width: 100%;
 }
 
@@ -406,14 +464,6 @@ li a:hover {
   position: relative;
 }
 
-.contact::before {
-  display: block;
-  content: "";
-  background-color: #d6d0d0;
-  width: 100%;
-  height: 60px;
-}
-
 .c-name {
   position: absolute;
   top: 20%;
@@ -427,7 +477,7 @@ li a:hover {
 
 .c-fil {
   background-color: rgba(0, 0, 0, 0.4);
-  height: 110vh;
+  height: 100%;
   width: 100%;
 }
 
@@ -466,6 +516,16 @@ input {
   border-bottom: 1px white solid;
   border-radius: 2px;
   color: white;
+  -webkit-transition: background-color 1s;
+  transition: background-color 1s;
+  -webkit-transition: border-bottom 1s;
+  transition: border-bottom 1s;
+}
+
+input:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-bottom: 1px transparent solid;
+  cursor: pointer;
 }
 
 input:focus {
@@ -485,10 +545,105 @@ textarea {
   resize: none;
   border-bottom: 1px white solid;
   border-radius: 2px;
+  -webkit-transition: color 1s;
+  transition: color 1s;
+  -webkit-transition: border-bottom 1s;
+  transition: border-bottom 1s;
+}
+
+textarea:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-bottom: 1px transparent solid;
+  cursor: pointer;
 }
 
 textarea:focus {
   background-color: black;
   color: white;
+}
+
+footer {
+  width: 100%;
+  height: 8rem;
+  background-color: black;
+  position: relative;
+}
+
+.f-container {
+  width: 100%;
+  height: 100%;
+}
+
+.f-container:after {
+  display: block;
+  content: "";
+  border-top: white 1px solid;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.footer-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 30%;
+  color: white;
+  position: absolute;
+  top: 40%;
+  left: 8%;
+}
+
+.f-l {
+  font-size: 20px;
+  color: white;
+  margin: 0;
+  border-right: white 1px solid;
+  padding: 10px;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.f-l:nth-of-type(4) {
+  border-right: black 1px solid;
+  padding: 10px;
+}
+
+.f-l:hover {
+  cursor: pointer;
+  color: #daf562;
+  background-color: rgba(151, 149, 149, 0.3);
+}
+
+.footer-a {
+  color: white;
+  font-size: 20px;
+  height: 100%;
+  -webkit-transition: color 0.7s;
+  transition: color 0.7s;
+}
+
+.footer-a:hover {
+  cursor: pointer;
+  color: #ffff48;
+}
+
+.footer-p {
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  bottom: 5px;
+  right: 4%;
+  margin: 0;
+}
+
+.f-mail {
+  position: absolute;
+  color: white;
+  font-size: 40px;
+  top: 40%;
+  right: 8%;
 }
 /*# sourceMappingURL=main.css.map */

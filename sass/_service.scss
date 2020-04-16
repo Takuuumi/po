@@ -4,20 +4,11 @@
     height: 120vh;
     background-size: cover;
     position: relative;
-    &::before {
-        display: block;
-        content: "";
-        // background-color: rgba(0,0,0,0.2);
-        background-color: rgb(214, 208, 208);
-        width: 100%;
-        height: 60px;
-    }
 }
 .s-con {
 background-color: rgba(0,0,0,0.4);
-height: 110vh;
+height: 100%;
 width: 100%;
-
 }
 .s-img {
 width: 100%;
@@ -32,5 +23,4 @@ left: 50%;
 color: white;
 padding: 40px;
 transform: translate(-50%, -10%);
-
 }

@@ -3,18 +3,10 @@
     max-width: 100%;
     height: 120vh;
     background-size: cover;
-    &::before {
-        display: block;
-        content: "";
-        // background-color: rgba(0,0,0,0.2);
-        background-color: rgb(218, 210, 210);
-        width: 100%;
-        height: 60px;
-    }
 }
 .l-inner {
     background-color: rgba(0,0,0,0.4);
-    height: 110vh;
+    height: 100%;
     width: 100%;
     margin: 0 auto;
     // width: 80%;

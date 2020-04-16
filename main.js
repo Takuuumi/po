@@ -8,3 +8,4 @@ loa.style.display = 'none';
 // contentsのdivを表示
 contents.classList.remove('hidden');
 });
+

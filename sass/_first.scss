@@ -14,10 +14,12 @@
 .f-p {
     position: absolute;
     top: 50%;
-    right: 50%;
-    transform: translate(50%, -50%);
+    right: 40%;
+    // transform: translate(50%, -50%);
     font-size: 90px;
     color: white;
+    animation-name: tada;
+    animation-duration: 1s;
     &::after {
         display: flex;
         content: "";
