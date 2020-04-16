@@ -1,0 +1,82 @@
+.contact {
+    background-image: url(../img/aiu.jpg);
+    width: 100%;
+    height: 120vh;
+    background-size: cover;
+    position: relative;
+    &::before {
+        display: block;
+        content: "";
+        // background-color: rgba(0,0,0,0.2);
+        background-color: rgb(214, 208, 208);
+        width: 100%;
+        height: 60px;
+    }
+}
+.c-name {
+    position: absolute;
+    top: 20%;
+    right: 50%; 
+    transform: translate(50%, 0);
+    color: white;
+    font-family: Georgia, serif;
+    font-size: 90px;
+
+}
+.c-fil {
+    background-color: rgba(0,0,0,0.4);
+    height: 110vh;
+    width: 100%;
+}
+.form {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -30%);
+    margin: 0 auto;
+    width: 80%;
+    justify-content: center;
+    text-align: center;
+    margin-top: 90px;
+}
+.inner {
+    color: white;
+}
+.sub {
+    width: 15%;
+    color: white;
+    background-color: rgba(0,0,0,0.2);
+}
+input {
+    border: none;
+    width: 20%;
+    margin-bottom: 40px;
+    background-color: rgba(0,0,0,0.5);
+    border: none;
+    padding: 0.5rem;
+    border-bottom: 1px white solid;
+    border-radius: 2px;
+    color: white;
+    &:focus {
+        border-color: black;
+        background-color: black; 
+    }
+}
+textarea {
+    margin-bottom: 60px;
+    background-color: rgba(0,0,0,0.7);
+    border: 1px solid rgb(61, 58, 58);
+    width: 40%;
+    height: 5rem;
+    border: none;
+    font-size: 1.5rem;
+    border: 1px solid black;
+    resize: none;
+    border-bottom: 1px white solid;
+    border-radius: 2px;
+    &:focus {
+        background-color: black;
+        color: white;
+    }
+
+}
