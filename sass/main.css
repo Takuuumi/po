@@ -322,13 +322,11 @@ li:nth-of-type(4) {
   font-family: Georgia, serif;
   position: absolute;
   top: 50%;
-  right: 40%;
+  right: 50%;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
   font-size: 90px;
   color: white;
-  -webkit-animation-name: tada;
-          animation-name: tada;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
 }
 
 .f-p::after {
@@ -336,7 +334,7 @@ li:nth-of-type(4) {
   display: -ms-flexbox;
   display: flex;
   content: "";
-  width: 16rem;
+  width: 15rem;
   border-bottom: white 1px solid;
   color: white;
   margin: 0;
@@ -363,7 +361,7 @@ li:nth-of-type(4) {
 }
 
 .letter {
-  background-image: url(../img/aikei4.jpeg);
+  background-image: url(../img/ai.jpg);
   max-width: 100%;
   height: 120vh;
   background-size: cover;
@@ -384,19 +382,20 @@ li:nth-of-type(4) {
 }
 
 .l-p {
-  background-color: rgba(255, 253, 253, 0.3);
+  background-color: rgba(43, 43, 43, 0.4);
   font-size: 20px;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  color: white;
-  padding: 40px;
-  -webkit-transform: translate(-15%, -20%);
-          transform: translate(-15%, -20%);
+  top: 45%;
+  right: 50%;
+  color: #cecece;
+  padding: 15px;
+  -webkit-transform: translate(15%, -20%);
+          transform: translate(15%, -20%);
+  font-family: serif;
 }
 
 .about {
-  background-image: url(../img/ai.jpg);
+  background-image: url(../img/aikei4.jpeg);
   width: 100%;
   height: 120vh;
   background-size: cover;
@@ -415,15 +414,17 @@ li:nth-of-type(4) {
 }
 
 .a-p {
-  background-color: rgba(255, 253, 253, 0.5);
+  background-color: rgba(255, 253, 253, 0.3);
   font-size: 20px;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 45%;
+  left: 57%;
   color: white;
-  padding: 40px;
-  -webkit-transform: translate(-85%, -10%);
-          transform: translate(-85%, -10%);
+  padding: 15px;
+  -webkit-transform: translate(-20%, -20%);
+          transform: translate(-20%, -20%);
+  font-family: serif;
+  text-align: right;
 }
 
 .service {
@@ -449,12 +450,14 @@ li:nth-of-type(4) {
   background-color: rgba(255, 253, 253, 0.5);
   font-size: 20px;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   color: white;
-  padding: 40px;
+  padding: 20px;
   -webkit-transform: translate(-50%, -10%);
           transform: translate(-50%, -10%);
+  font-family: serif;
+  text-align: center;
 }
 
 .contact {
@@ -644,6 +647,6 @@ footer {
   color: white;
   font-size: 40px;
   top: 40%;
-  right: 8%;
+  right: 4%;
 }
 /*# sourceMappingURL=main.css.map */

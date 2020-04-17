@@ -1,5 +1,5 @@
 .about {
-        background-image: url(../img/ai.jpg);
+        background-image: url(../img/aikei4.jpeg);
         width: 100%;
         height: 120vh;
         background-size: cover;
@@ -19,15 +19,16 @@
 }
 
 .a-p {
-    background-color: rgba(255, 253, 253, 0.5);
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    color: white;
-    padding: 40px;
-    transform: translate(-85%, -10%);
-    
+   background-color: rgba(255, 253, 253, 0.3);
+   font-size: 20px;
+   position: absolute;
+   top: 45%;
+   left: 57%;
+   color: white;
+    padding: 15px;
+   transform: translate(-20%, -20%);
+   font-family: serif;
+   text-align: right;
 }
 
 // .a-inner {

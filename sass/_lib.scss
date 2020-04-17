@@ -1,3 +1,22 @@
+/////////mediascreen///////////
+@mixin pc {
+  @media screen and (min-width: 100px) {
+    @content;
+  }
+}
+@mixin tab {
+  @media screen and (max-width: 999px) {
+    @content;
+  }  
+}
+@mixin sp {
+  @media screen and (max-width: 910px){
+    @content;
+  }
+}
+
+
+
 a {
     color: black;
 }
@@ -10,15 +29,11 @@ a {
     display: flex;
     justify-content: center;
     padding-top: 70px;
-// position: absolute;
-// top: 50px;
 }
 .active {
     animation-name: above;
     animation-duration: 2s;
 }
-
-
 
 
 

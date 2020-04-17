@@ -15,16 +15,14 @@
     font-family: Georgia, serif;
     position: absolute;
     top: 50%;
-    right: 40%;
-    // transform: translate(50%, -50%);
+    right: 50%;
+    transform: translate(50%, -50%);
     font-size: 90px;
     color: white;
-    animation-name: tada;
-    animation-duration: 3s;
     &::after {
         display: flex;
         content: "";
-        width: 16rem;
+        width: 15rem;
         border-bottom: white 1px solid;
         color: white;
         margin: 0;
@@ -43,5 +41,12 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+    }
+}
+
+
+.f-p {
+    @include tab {
+        // transform: translate(10%, -50%);
     }
 }
