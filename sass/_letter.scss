@@ -3,6 +3,9 @@
     max-width: 100%;
     height: 120vh;
     background-size: cover;
+    @include sp {
+        height: 120vh;
+    }
 }
 .l-inner {
     background-color: rgba(0,0,0,0.4);
@@ -13,6 +16,7 @@
     display: flex;
     justify-content: center;
     position: relative;
+
 }
 .l-p {
     background-color: rgba(43, 43, 43, 0.4);
@@ -24,5 +28,14 @@
     padding: 15px;
     transform: translate(15%, -20%);
     font-family: serif;
+    @include sp {
+        display: block;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        top: 30%;
+        right: 10%;
+    }
 }
 

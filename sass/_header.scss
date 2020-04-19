@@ -8,6 +8,7 @@ header {
     position: absolute;
     color: white;
     font-family: Georgia, serif;
+
 }
 .logo {
     font-size: 50px;
@@ -17,7 +18,7 @@ header {
     transition: color 2s;
     &:hover {
         color: black;
-    }
+}   
     // animation-name: toDown;
     // animation-duration: 3s;
     
@@ -54,6 +55,15 @@ li {
         cursor: pointer;
         width: 100%; 
     }
+}
+.h-l {
+    @include sp {
+        display: none;
+    }
+}
+
+.logo {
+    margin: 20px 0 0 25px;
 }
 
 

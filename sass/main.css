@@ -1,3 +1,8 @@
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 a {
   color: black;
 }
@@ -305,6 +310,16 @@ li:nth-of-type(4) {
   width: 100%;
 }
 
+@media screen and (max-width: 910px) {
+  .h-l {
+    display: none;
+  }
+}
+
+.logo {
+  margin: 20px 0 0 25px;
+}
+
 .first {
   background-image: url(../img/aikei.jpeg);
   width: 100%;
@@ -367,6 +382,12 @@ li:nth-of-type(4) {
   background-size: cover;
 }
 
+@media screen and (max-width: 910px) {
+  .letter {
+    height: 120vh;
+  }
+}
+
 .l-inner {
   background-color: rgba(0, 0, 0, 0.4);
   height: 100%;
@@ -394,11 +415,33 @@ li:nth-of-type(4) {
   font-family: serif;
 }
 
+@media screen and (max-width: 910px) {
+  .l-p {
+    display: block;
+    margin: 0 auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 80%;
+    top: 30%;
+    right: 10%;
+  }
+}
+
 .about {
   background-image: url(../img/aikei4.jpeg);
   width: 100%;
-  height: 120vh;
+  height: 130vh;
   background-size: cover;
+}
+
+@media screen and (max-width: 910px) {
+  .about {
+    height: 160vh;
+  }
 }
 
 .a-con {
@@ -414,6 +457,7 @@ li:nth-of-type(4) {
 }
 
 .a-p {
+  margin-bottom: 40px;
   background-color: rgba(255, 253, 253, 0.3);
   font-size: 20px;
   position: absolute;
@@ -427,12 +471,35 @@ li:nth-of-type(4) {
   text-align: right;
 }
 
+@media screen and (max-width: 910px) {
+  .a-p {
+    display: block;
+    margin: 0 auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 80%;
+    top: 25%;
+    left: 10%;
+    text-align: left;
+  }
+}
+
 .service {
   background-image: url(../img/aik.jpg);
   width: 100%;
-  height: 120vh;
+  height: 130vh;
   background-size: cover;
   position: relative;
+}
+
+@media screen and (max-width: 910px) {
+  .service {
+    height: 160vh;
+  }
 }
 
 .s-con {
@@ -460,23 +527,52 @@ li:nth-of-type(4) {
   text-align: center;
 }
 
+@media screen and (max-width: 910px) {
+  .s-p {
+    display: block;
+    margin: 0 auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 80%;
+    top: 25%;
+    left: 10%;
+    text-align: center;
+  }
+}
+
 .contact {
   background-image: url(../img/aiu.jpg);
   width: 100%;
-  height: 120vh;
+  height: 130vh;
   background-size: cover;
   position: relative;
 }
 
+@media screen and (max-width: 910px) {
+  .contact {
+    height: 120vh;
+  }
+}
+
 .c-name {
   position: absolute;
-  top: 20%;
+  top: 10%;
   right: 50%;
   -webkit-transform: translate(50%, 0);
           transform: translate(50%, 0);
   color: white;
   font-family: Georgia, serif;
   font-size: 90px;
+}
+
+@media screen and (max-width: 910px) {
+  .c-name {
+    top: 10%;
+  }
 }
 
 .c-fil {
@@ -487,7 +583,7 @@ li:nth-of-type(4) {
 
 .form {
   position: absolute;
-  top: 50%;
+  top: 40%;
   right: 50%;
   -webkit-transform: translate(50%, -30%);
           transform: translate(50%, -30%);
@@ -498,6 +594,12 @@ li:nth-of-type(4) {
           justify-content: center;
   text-align: center;
   margin-top: 90px;
+}
+
+@media screen and (max-width: 910px) {
+  .form {
+    top: 40%;
+  }
 }
 
 .inner {
@@ -513,7 +615,7 @@ li:nth-of-type(4) {
 input {
   border: none;
   width: 20%;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   background-color: rgba(0, 0, 0, 0.5);
   border: none;
   padding: 0.5rem;
@@ -535,6 +637,12 @@ input:hover {
 input:focus {
   border-color: black;
   background-color: black;
+}
+
+@media screen and (max-width: 910px) {
+  input {
+    width: 50%;
+  }
 }
 
 textarea {
@@ -566,9 +674,21 @@ textarea:focus {
   color: white;
 }
 
+@media screen and (max-width: 910px) {
+  textarea {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  .sub {
+    width: 40%;
+  }
+}
+
 footer {
   width: 100%;
-  height: 8rem;
+  height: 10rem;
   background-color: black;
   position: relative;
   font-family: Georgia, serif;
@@ -599,6 +719,15 @@ footer {
   position: absolute;
   top: 40%;
   left: 8%;
+}
+
+@media screen and (max-width: 910px) {
+  .footer-ul {
+    top: 10%;
+    right: 90%;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
 }
 
 .f-l {
@@ -642,12 +771,26 @@ footer {
   margin: 0;
 }
 
+@media screen and (max-width: 910px) {
+  .footer-p {
+    bottom: 7px;
+    left: 15%;
+  }
+}
+
 .f-mail {
   position: absolute;
   color: white;
   font-size: 40px;
   top: 40%;
   right: 4%;
+}
+
+@media screen and (max-width: 910px) {
+  .f-mail {
+    top: 50%;
+    left: 15%;
+  }
 }
 
 h2 {
