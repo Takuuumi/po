@@ -10,16 +10,32 @@ $(function(){
     $('body').hide().fadeIn(2000);
   });///
 
+  $('.header-a').click(function() {
+    var id = $(this).attr('href');
+    var position = $(id).offset().top;
+    $('html, body').animate({
+      'scrollTop':position
+    }, 500);
+  })
+
+  jQuery(function() {
+    var pagetop = $('#page_top');   
+    pagetop.hide();
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {  //100pxスクロールしたら表示
+            pagetop.fadeIn();
+        } else {
+            pagetop.fadeOut();
+        }
+    });
+    pagetop.click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 500); //0.5秒かけてトップへ移動
+        return false;
+    });
+});
 
 
-//   $(window).scroll(function (){
-// 	$("section").each(function(){
-// 	  let position = $(this).offset().top; //ページの一番上から要素までの距離を取得
-// 	  let scroll = $(window).scrollTop(); //スクロールの位置を取得
-// 	  let windowHeight = $(window).height(); //ウインドウの高さを取得
-// 	  if (scroll > position - windowHeight){ //スクロール位置が要素の位置を過ぎたとき
-// 	    $(this).addClass('active'); //クラス「active」を与える
-// 	  }
-// 	});
-// });
+
 
