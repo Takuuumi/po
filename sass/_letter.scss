@@ -3,8 +3,24 @@
     max-width: 100%;
     height: 120vh;
     background-size: cover;
+    flex-wrap: wrap;
     @include sp {
-        height: 120vh;
+        height: 80vh;
+}
+}
+#letter-name {
+    margin-top: 17%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+    @include tab {
+        display: block;
+        padding: 0;
+        margin-left: 7rem;
+    }
+    @include sp {
+        margin-left: 4rem;
+        margin-top: 0;
     }
 }
 .l-inner {
@@ -16,26 +32,25 @@
     display: flex;
     justify-content: center;
     position: relative;
-
+    @include tab {
+        display: flex;
+        flex-direction: column;
+    }
+    
 }
 .l-p {
-    background-color: rgba(43, 43, 43, 0.4);
+    // background-color: rgba(43, 43, 43, 0.4);
     font-size: 20px;
-    position: absolute;
-    top: 45%;
-    right: 50%;
-    color: rgb(206, 206, 206);
-    padding: 15px;
-    transform: translate(15%, -20%);
+    margin: 20% 15rem 0 0;
+    width: 80%;
+    justify-content: center;
+    color: white;
     font-family: serif;
-    @include sp {
-        display: block;
-        margin: 0 auto;
-        align-items: center;
-        justify-content: center;
+    @include tab {
+        margin: 5% auto 0;
         width: 80%;
-        top: 30%;
-        right: 10%;
+        justify-content: center;
+        display: block;
     }
 }
 

@@ -3,9 +3,27 @@
         width: 100%;
         height: 130vh;
         background-size: cover;
+        flex-wrap: wrap;
         @include sp {
-            height: 160vh;
+        height: 100vh;
+
         }
+}
+#about-name {
+    // margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10rem;
+    @include tab {
+        display: block;
+        padding: 0;
+        margin-left: 7rem;
+        margin-top: 5rem;
+    }
+    @include sp {
+        margin-left: 4rem;
+        margin-top: 0;
+    }
 }
 .a-con {
     background-color: rgba(0,0,0,0.4);
@@ -13,37 +31,38 @@
     height: 100%;
     width: 100%;
     position: relative;
-
-
+    display: flex;
+    flex-flow: row-reverse;
+    @include tab {
+        display: flex;
+        flex-direction: column;   
     }
+    @include sp {
+        padding-top: 40px;
+    }
+}
 .a-img {
     width: 100%;
     background-size: cover;
 }
 
 .a-p {
-    margin-bottom: 40px;
-   background-color: rgba(255, 253, 253, 0.3);
-   font-size: 20px;
-   position: absolute;
-   top: 30%;
-   left: 50%;
-   color: white;
-    padding: 15px;
-   transform: translate(-100%, -10%);
-   font-family: serif;
-   text-align: right;
-   @include sp {
-    display: block;
-    margin: 0 auto;
-    align-items: center;
-    justify-content: center;
+    margin-left: 15rem;
+    margin-top: 15rem;
+    font-size: 20px;
+    // margin: 20% 0 0 20%;
     width: 80%;
-    top: 25%;
-    left: 10%;
-    text-align: left;
-   }
+    justify-content: center;
+    color: white;
+    font-family: serif;
+    @include tab {
+        margin: 5% auto 0;
+        width: 80%;
+        justify-content: center;
+        display: block;
+    }
 }
+
 
 // .a-inner {
 //     margin: 0 auto;

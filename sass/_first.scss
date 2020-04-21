@@ -4,6 +4,9 @@
     height: 100vh;
     background-size: cover;
     // position: relative;
+    @include sp {
+        height: 90vh;
+    }
 }
 .f-continer {
     background-color: rgba(0,0,0,0.2);
@@ -12,6 +15,7 @@
 
 }
 .f-p {
+    z-index: 200;
     font-family: Georgia, serif;
     position: absolute;
     top: 50%;

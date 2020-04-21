@@ -1,22 +1,23 @@
 /////////mediascreen///////////
 @mixin pc {
-  @media screen and (min-width: 100px) {
+  @media screen and (min-width: 1001px) {
     @content;
   }
 }
 @mixin tab {
-  @media screen and (max-width: 999px) {
+  @media screen and (max-width: 1000px) {
     @content;
   }  
 }
 @mixin sp {
-  @media screen and (max-width: 910px){
+  @media screen and (max-width: 375px){
     @content;
   }
 }
 
 body {
   box-sizing: border-box;
+  margin: 0;
 }
 
 a {
@@ -30,7 +31,7 @@ a {
     width: 80%;
     display: flex;
     justify-content: center;
-    padding-top: 70px;
+    // padding-top: 70px;
 }
 .active {
     animation-name: above;
